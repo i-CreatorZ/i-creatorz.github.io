@@ -1,0 +1,283 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    user-select: none;
+    font-family: 'Cera Regular', serif;
+}
+
+@font-face {
+    font-family: 'Cera Regular';
+    src: url('../assets/fonts/cera-regular.otf');
+}
+
+@font-face {
+    font-family: 'Cera Italic';
+    src: url('../assets/fonts/cera-italic.otf');
+}
+
+@font-face {
+    font-family: 'Cera Bold';
+    src: url('../assets/fonts/cera-bold.otf');
+}
+
+@font-face {
+    font-family: 'Cera Bold Italic';
+    src: url('../assets/fonts/cera-bold-italic.otf');
+}
+
+@font-face {
+    font-family: 'Cera Black';
+    src: url('../assets/fonts/cera-black.otf');
+}
+
+@font-face {
+    font-family: 'Cera Black Italic';
+    src: url('../assets/fonts/cera-black-italic.otf');
+}
+
+.bar {
+    height: 110px;
+    width: 100%;
+}
+
+.bar #container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.header-logo-sec img,.header-logo-sec a {
+    height: 80px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 10px;
+}
+
+.header-ops-sec {
+    text-align: right;
+    margin: 0 20px;
+}
+
+.bar ul {
+    padding: 0px;
+    margin: 0 20px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    list-style: none;
+    overflow: hidden;
+}
+
+.bar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Cera Bold', serif;
+    transition: 0.3s;
+}
+
+.bar li {
+    display: inline;
+    text-transform: uppercase;
+}
+
+.bar li a:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+footer {
+    background-color: #EAEAEA;
+    color: gray;
+    left: 0px;
+    width: 100%;
+}
+
+.footer-sec1 {
+    background-color: #F6F6F6;
+    text-align: center;
+}
+
+.footer-sec2 {
+    height: 80px;
+}
+
+.alignLeft {
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.7rem;
+    margin: 0 2.5rem;
+}
+
+.alignRight {
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.7rem;
+    margin: 0 2.5rem;
+}
+
+.info-sec {
+    width: 75%;
+    display: inline-block;
+}
+
+.info {
+    width: 100%;
+    padding: 3.5rem 0;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 25% 30% 45%;
+}
+
+#blacklogo {
+    margin-right: auto;
+    display: block;
+}
+
+.left-sec {
+    height: 100%;
+    width: auto;
+    position: relative;
+}
+
+#left {
+    font-family: "Cera Bold", serif;
+    color: gray;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#left p {
+    margin-bottom: 1.5em;
+}
+
+#left a {
+    margin: 0 0.1rem;
+    text-decoration: none;
+}
+
+#left a img {
+    height: 26px;
+}
+
+#center {
+    float: left;
+    width: 33%;
+}
+
+#small {
+    padding: 5px;
+    margin: 0 10px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    float: none;
+}
+
+#small a {
+    color: gray;
+    text-align: left;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Cera Bold', serif;
+    transition: 0.3s;
+    height: 5px;
+}
+
+#small li {
+    display: block;
+    text-transform: uppercase;
+    padding: 8px;
+}
+
+#small li a:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.right-sec {
+    height: 100%;
+    position: relative;
+}
+
+#right {
+    color: black;
+    text-transform: uppercase;
+    font-family: "Cera Bold", serif;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#address {
+    text-transform: capitalize;
+    font-size: smaller;
+    color: gray;
+}
+
+.coming-soon {
+    height: calc(100% - 500px);
+    width: 100%;
+    text-align: center;
+}
+
+.coming-soon div {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mobile {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    text-align: center;
+    display: none;
+}
+
+.mobile div {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 80%;
+    font-size: 18px;
+}
+
+.mobile div img {
+    height: 5rem;
+}
+
+@media only screen and (orientation: portrait) {
+    .mobile {
+        display: block;
+    }
+}

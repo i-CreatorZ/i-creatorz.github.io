@@ -1,0 +1,141 @@
+@media screen and (max-width:600px) {
+    nav {
+        position: static;
+    }
+    nav a {
+        float: none;
+        text-align: center;
+    }
+    body {
+        text-align: center;
+    }
+}
+
+#Website {
+    font-family: "Cera Regular", serif;
+    font-weight: bold;
+    display: block;
+}
+
+.about-image-sec {
+    height: calc(100% - 110px);
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.about-image-bg {
+    height: 100%;
+    width: 100%;
+    background: url("../assets/images/bgmain.jpg") no-repeat center;
+    background-size: cover;
+    position: absolute;
+}
+
+.about-image-content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.about-image-content:hover {
+    transition: 0.2s;
+    backdrop-filter: brightness(0.8);
+}
+
+.about-image-content2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+#tech {
+    float: left;
+    display: block;
+    padding-left: 60px;
+    text-transform: uppercase;
+    font-family: "Cera Bold", serif;
+    color: #656565;
+    font-size: 16px;
+}
+
+#year {
+    float: right;
+    display: block;
+    padding-right: 60px;
+    text-transform: uppercase;
+    font-family: "Cera Bold", serif;
+    color: #656565;
+    font-size: 16px;
+}
+
+.about2-image-sec {
+    height: 90%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: 50% 50%;
+}
+
+.about2-image-content-bg {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.about2-image-content1 {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column: 1;
+}
+
+.about2-image-content1-bg {
+    background-image: url("../assets/images/FLYER.jpg");
+}
+
+.about2-image-content2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.about2-image-content2-bg {
+    background-image: url("../assets/images/bg3.jpeg");
+}
+
+.about2-image-content3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.about2-image-content3-bg {
+    background-image: url("../assets/images/bg4.jpg");
+}
+
+.about2-image-content4 {
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+}
+
+.about2-image-content4-bg {
+    background-image: url("../assets/images/bg5.jpg");
+}
+
+.about2-image-content-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.about2-image-content-overlay:hover {
+    transition: 0.2s;
+    backdrop-filter: brightness(0.8);
+}

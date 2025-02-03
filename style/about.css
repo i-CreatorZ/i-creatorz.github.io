@@ -1,0 +1,127 @@
+#content {
+    width: 70%;
+    margin: 80px auto;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 50px;
+}
+
+.row {
+    background-color: #313131;
+}
+
+#content div p {
+    font-size: 23px;
+    font-weight: bold;
+    font-family: "Cera Bold", serif;
+}
+
+.box {
+    display: table-cell;
+    padding-left: 110px;
+}
+
+.about-image-sec {
+    height: 500px;
+    width: 1200px;
+    background-size: cover;
+    background: url("../assets/images/bgabout.jpg") no-repeat center;
+}
+
+#txt p {
+    font-family: "Cera Regular", serif;
+    color: #8D8D8D;
+    font-size: 18px !important;
+    text-align: left;
+}
+
+#h1 {
+    font-family: "Cera Black", serif;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 4rem 0 3.5rem 0;
+}
+
+#h1 h1 {
+    margin: 0;
+}
+
+.focus-sec {
+    padding: 5rem 0;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.column img {
+    height: 90px;
+}
+
+.column {
+    transform: scale(0.9);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column h3 {
+    padding-top: 10px;
+    font-family: "Cera Bold", serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+.column p {
+    font-family: "Cera Regular", serif;
+    color: white;
+    text-align: center;
+    font-size: smaller;
+}
+
+#sponsors {
+    font-family: "Cera Regular", serif;
+    color: gray;
+    padding: 2.2rem 0;
+}
+
+#sponsors h4 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.column2 {
+    float: left;
+    width: 25%;
+    padding: 100px;
+    height: 400px;
+}
+
+figure {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+figure img {
+    vertical-align: middle;
+    margin: 0 0.8rem;
+}
+
+.imGSec {
+    white-space: nowrap;
+}
+
+@media screen and (max-width:600px) {
+    nav {
+        position: static;
+    }
+    nav a {
+        float: none;
+        text-align: center;
+    }
+}
